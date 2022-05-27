@@ -20,14 +20,13 @@
 			src="https://kit.fontawesome.com/e466229621.js"
 			crossorigin="anonymous"
 		></script>
+		<link rel="stylesheet" href="CSS/normalize.css">
 		<link rel="stylesheet" href="CSS/style.css" />
 		<title>Ohmyfood</title>
 	</head>
 	<body>
 		<header>
-			<div class="logo_header">
-				<img src="images/logo/ohmyfood.png" alt="logo Ohmyfood" />
-			</div>
+			<h1><a href="index.html">ohmyfood</a></h1>
 		</header>
 		<main>
 			<!--Bandeau géolocalisation-->
@@ -59,78 +58,84 @@
 				</div>
 			</section>
 			<!--Liste des restaurants-->
-			<nav class="restaurants_list">
+			<nav>
+				<div class="restaurants_list">
 				<h2>Restaurants</h2>
 				<!--Création d'une card de restaurant-->
 
 				<a href="#">
 					<article class="card_restaurants">
-						<div class="photo_restaurants">
+						<div class="card_restaurants__photo">
 							<img
 								src="./images/restaurants/palette.jpg"
 								alt="La palette du goût"
 							/>
 						</div>
-						<div class="card_text">
-							<h3 class="titre_card">La palette du goût</h3>
-							<p class="lieu_card">Ménilmontant</p>
-							<span class="selection_heart">
+						<div class="card_restaurants__text">
+							<div class="card_restaurants__infos">
+								<h3 class="card_restaurants__title">La palette du goût</h3>
+								<p class="card_restaurants__lieu">Ménilmontant</p>
+								<div class="card_restaurants__heart">
 								<i class="far fa-heart"></i>
-							</span>
+							</div>
 						</div>
 					</article>
 				</a>
 				<a href="#">
 					<article class="card_restaurants">
-						<div class="photo_restaurants">
+						<div class="card_restaurants__photo">
 							<img
 								src="./images/restaurants/note.jpg"
 								alt="La note enchantée"
 							/>
 						</div>
-						<div class="card_text">
-							<h3 class="titre_card">La note enchantée</h3>
-							<p class="lieu_card">Charonne</p>
-							<span class="selection_heart">
+						<div class="card_restaurants__text">
+							<div class="card_restaurants__infos">
+								<h3 class="card_restaurants__title">La note enchantée</h3>
+								<p class="card_restaurants__lieu">Charonne</p>
+							<div class="card_restaurants__heart">
 								<i class="far fa-heart"></i>
-							</span>
+							</div>
 						</div>
 					</article>
 				</a>
 				<a href="#">
 					<article class="card_restaurants">
-						<div class="photo_restaurants">
+						<div class="card_restaurants__photo">
 							<img
 								src="./images/restaurants/francaise.jpg"
 								alt="À la française"
 							/>
 						</div>
-						<div class="card_text">
-							<h3 class="titre_card">À la française</h3>
-							<p class="lieu_card">Cité Rouge</p>
-							<span class="selection_heart">
-								<i class="far fa-heart"></i>
-							</span>
+						<div class="card_restaurants__text">
+							<div class="card_restaurants__infos">
+							<h3 class="card_restaurants__title">À la française</h3>
+							<p class="card_restaurants__lieu">Cité Rouge</p>
+						<div class="card_restaurants__heart">
+							<i class="far fa-heart"></i>
 						</div>
+							</div>
 					</article>
 				</a>
 				<a href="#">
 					<article class="card_restaurants">
-						<div class="photo_restaurants">
+						<div class="card_restaurants__photo">
 							<img
 								src="./images/restaurants/delice.jpg"
 								alt="Le délice des sens"
 							/>
 						</div>
-						<div class="card_text">
-							<h3 class="titre_card">Le délice des sens</h3>
-							<p class="lieu_card">Folie-Méricourt</p>
-							<span class="selection_heart">
-								<i class="far fa-heart"></i>
-							</span>
+						<div class="card_restaurants__text">
+							<div class="card_restaurants__infos">
+							<h3 class="card_restaurants__title">Le délice des sens</h3>
+							<p class="card_restaurants__lieu">Folie-Méricourt</p>
+						<div class="card_restaurants__heart">
+							<i class="far fa-heart"></i>
 						</div>
+							</div>
 					</article>
 				</a>
+				</div>
 			</nav>
 		</main>
 		<footer>
