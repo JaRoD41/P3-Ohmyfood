@@ -1,22 +1,11 @@
 @import "./Utils/variables";
-@import "./Layout/header";
+@import "./Utils/mixins";
 
-@mixin body-position {
-	max-width: 768px;
-	min-width: 320px;
-	margin: auto;
-	box-sizing: border-box;
-	margin-bottom: -50rem;
-}
-body {
-	@include body-position;
-	@media (min-width: $breakpoint-tablet) {
-		max-width: 100%;
-	}
-	@media (min-width: $breakpoint-desktop) {
-		max-width: 100%;
-	}
-}
+@import "./Layout/header";
+@import "./Layout/cards";
+
+@import "./Base/base";
+
 img {
 	width: 150px;
 }

@@ -1,0 +1,7 @@
+@mixin body-position {
+	max-width: 768px;
+	min-width: 320px;
+	margin: auto;
+	box-sizing: border-box;
+	margin-bottom: -50rem;
+}

@@ -1,0 +1,9 @@
+body {
+	@include body-position;
+	@media (min-width: $breakpoint-tablet) {
+		max-width: 100%;
+	}
+	@media (min-width: $breakpoint-desktop) {
+		max-width: 100%;
+	}
+}
