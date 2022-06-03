@@ -1,10 +1,13 @@
 @import "./Utils/variables";
 @import "./Utils/mixins";
 
+@import "./Base/base";
+@import "./Base/typography";
+
 @import "./Layout/header";
 @import "./Layout/cards";
-
-@import "./Base/base";
+@import "./Layout/footer";
+@import "./Layout/section";
 
 img {
 	width: 150px;
