@@ -1,0 +1,22 @@
+@import "./Utils/variables";
+@import "./Layout/header";
+
+@mixin body-position {
+	max-width: 768px;
+	min-width: 320px;
+	margin: auto;
+	box-sizing: border-box;
+	margin-bottom: -50rem;
+}
+body {
+	@include body-position;
+	@media (min-width: $breakpoint-tablet) {
+		max-width: 100%;
+	}
+	@media (min-width: $breakpoint-desktop) {
+		max-width: 100%;
+	}
+}
+img {
+	width: 150px;
+}

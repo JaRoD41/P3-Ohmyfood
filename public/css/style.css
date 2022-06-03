@@ -1,0 +1,23 @@
+body {
+  max-width: 768px;
+  min-width: 320px;
+  margin: auto;
+  box-sizing: border-box;
+  margin-bottom: -50rem;
+}
+@media (min-width: 768px) {
+  body {
+    max-width: 100%;
+  }
+}
+@media (min-width: 1440px) {
+  body {
+    max-width: 100%;
+  }
+}
+
+img {
+  width: 150px;
+}
+
+/*# sourceMappingURL=style.css.map */
