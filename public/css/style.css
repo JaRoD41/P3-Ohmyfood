@@ -4,6 +4,7 @@ body {
   margin: auto;
   box-sizing: border-box;
   margin-bottom: -50rem;
+  font-family: "Roboto", sans-serif;
 }
 @media (min-width: 768px) {
   body {
@@ -16,12 +17,13 @@ body {
   }
 }
 
-* {
-  font-family: "Roboto", sans-serif;
-}
-
 h1 {
   font-family: "Shrikhand", sans-serif;
+}
+
+h2 {
+  font-size: 2rem;
+  font-weight: bold;
 }
 
 header {
