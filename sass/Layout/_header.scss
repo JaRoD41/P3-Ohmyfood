@@ -1,12 +1,13 @@
 header {
-	font-family: "Shrikhand", sans-serif;
 	font-weight: bold;
 	text-align: center;
+	padding: 1rem;
 	a {
 		text-decoration: none;
 		color: black;
 	}
 	img {
-		width: 60%;
+		width: 30%;
+		min-width: 120px;
 	}
 }

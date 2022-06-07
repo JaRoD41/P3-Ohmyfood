@@ -22,27 +22,28 @@ h1 {
 }
 
 h2 {
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-weight: bold;
 }
 
 header {
-  font-family: "Shrikhand", sans-serif;
   font-weight: bold;
   text-align: center;
+  padding: 1rem;
 }
 header a {
   text-decoration: none;
   color: black;
 }
 header img {
-  width: 60%;
+  width: 30%;
+  min-width: 120px;
 }
 
 .card_restaurants {
-  width: 90%;
-  height: 300px;
-  margin: 15px;
+  width: 300px;
+  height: 200px;
+  margin: auto;
   border-radius: 20px;
   background-color: white;
   box-shadow: 0px 5px 10px #999;
@@ -89,7 +90,24 @@ header img {
 
 .intro {
   text-align: center;
-  background-color: gainsboro;
+  background-color: linear-gradient(#ffffff, #c3c3c3);
+  width: 100%;
+}
+
+.bandeau-loc {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 3rem;
+  background-color: lightgray;
+}
+
+.restaurants_list {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 2rem;
 }
 
 img {

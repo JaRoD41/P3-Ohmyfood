@@ -1,4 +1,19 @@
 .intro {
 	text-align: center;
-	background-color: $intro-color;
+	background-color: $linear-grey;
+	width: 100%;
+}
+.bandeau-loc {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	height: 3rem;
+	background-color: lightgray;
+}
+.restaurants_list {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	gap: 2rem;
 }
