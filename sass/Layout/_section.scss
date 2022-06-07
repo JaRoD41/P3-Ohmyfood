@@ -1,7 +1,7 @@
 .intro {
 	text-align: center;
-	background-color: $linear-grey;
 	width: 100%;
+	@include linear-grey;
 }
 .bandeau-loc {
 	display: flex;

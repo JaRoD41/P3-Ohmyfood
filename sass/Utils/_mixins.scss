@@ -5,3 +5,6 @@
 	box-sizing: border-box;
 	margin-bottom: -50rem;
 }
+@mixin linear-grey {
+	background-color: linear-gradient(#ffffff, #c3c3c3);
+}
