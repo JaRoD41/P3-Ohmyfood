@@ -1,0 +1,13 @@
+footer {
+	background-color: #353535;
+	margin-top: 2rem;
+	&__flex {
+		display: flex;
+		flex-direction: column;
+		padding: 2rem 2rem 2rem 4rem;
+		& h2,
+		ul {
+			color: white;
+		}
+	}
+}

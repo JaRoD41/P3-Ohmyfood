@@ -1,15 +1,28 @@
 .intro {
+	display: flex;
+	flex-direction: column;
 	text-align: center;
 	width: 100%;
-	@include linear-grey;
+	background: linear-gradient(white, #eaeaea);
+	margin: auto;
+	&__explain {
+		font-weight: bold;
+		font-size: 1rem;
+		padding: 0 1.1rem;
+	}
 }
+
 .bandeau-loc {
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
 	align-items: center;
 	height: 3rem;
-	background-color: lightgray;
+	background-color: #eaeaea;
+	font-weight: bold;
+	&__icon {
+		padding-right: 1rem;
+	}
 }
 .restaurants_list {
 	display: flex;

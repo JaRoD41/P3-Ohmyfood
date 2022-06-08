@@ -33,7 +33,8 @@
 		<main>
 			<!--Bandeau géolocalisation-->
 			<div class="bandeau-loc">
-				<i class="fas fa-map-marker-alt">Paris, Belleville</i>
+				<span class="bandeau-loc__icon"><i class="fas fa-map-marker-alt"></i></span>
+				<span>Paris, Belleville</span>
 			</div>
 			<!--Zone d'introduction du site-->
 			<section class="intro">
@@ -41,7 +42,7 @@
 				<div class="intro__explain">
 					Découvrez des restaurants d'exception, sélectionnés par nos soins.
 				</div>
-				<div class="intro__button">Explorez nos restaurants</div>
+				<button class="btn">Explorez nos restaurants</button>
 			</section>
 			<!--Fonctionnement du site-->
 			<section class="fonctionnement">
@@ -140,22 +141,23 @@
 				</div>
 			</nav>
 		</main>
+<!--Footer Commun à toutes les pages-->
 		<footer>
-			<div class="liens_footer">
-				<img src="images/logo/ohmyfood.png" alt="logo ohmyfood" />
+			<div class="footer__flex">
+				<h4>ohmyfood</h4>
 				<ul>
 					<li>
-						<a href="#"
+						<a href="#" class="link1"
 							><i class="fas fa-utensils"></i>Proposer un restaurant</a
 						>
 					</li>
 					<li>
-						<a href="#"
+						<a href="#" class="link2"
 							><i class="fas fa-hands-helping"></i>Devenir partenaire</a
 						>
 					</li>
-					<li><a href="#">Mentions légales</a></li>
-					<li><a href="mailto:contact@ohmyfood.com">Contact</a></li>
+					<li><a href="#" class="link3">Mentions légales</a></li>
+					<li><a href="mailto:contact@ohmyfood.com" class="link4">Contact</a></li>
 				</ul>
 			</div>
 		</footer>
