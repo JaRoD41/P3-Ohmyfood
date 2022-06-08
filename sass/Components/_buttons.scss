@@ -19,3 +19,44 @@
 		width: 50%;
 	}
 }
+.btn-fonct {
+	display: flex;
+	border: none;
+	width: 100%;
+	align-items: center;
+	justify-content: space-evenly;
+	height: 2rem;
+	font-weight: bold;
+	font-size: 14px;
+	padding: 1rem;
+	border-radius: 15px;
+	@include boxshadow;
+}
+.num-fonct {
+	display: flex;
+	color: white;
+	font-weight: bold;
+	margin-left: -15px;
+	width: 30px;
+	height: 25px;
+	background-color: $primary-color;
+	border-radius: 25px;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+	left: 10px;
+}
+.btn-fonct-pink {
+	display: flex;
+	border: none;
+	width: 100%;
+	align-items: center;
+	justify-content: space-evenly;
+	height: 2rem;
+	font-weight: bold;
+	font-size: 14px;
+	padding: 1rem;
+	border-radius: 15px;
+	background-color: #f2eafb;
+	@include boxshadow;
+}

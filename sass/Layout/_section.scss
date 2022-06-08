@@ -35,3 +35,33 @@
 		gap: 2rem;
 	}
 }
+.fonctionnement {
+	margin: 0 1rem;
+}
+.fonctionnement-flex {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	list-style-type: none;
+	height: 240px;
+	li {
+		display: flex;
+		height: 48px;
+		align-items: center;
+		font-size: 14px;
+		padding: 1rem;
+		border-radius: 45px;
+	}
+	.fa-store {
+		color: $primary-color;
+	}
+	@media (min-width: $breakpoint-tablet) {
+		flex-direction: row;
+		align-items: center;
+		height: 100px;
+		justify-content: space-evenly;
+	}
+}
+.restaurants_list {
+	margin: 0 1rem;
+}
