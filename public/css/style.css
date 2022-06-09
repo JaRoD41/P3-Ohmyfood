@@ -84,7 +84,7 @@ a {
   color: white;
   font-weight: bold;
   margin-left: -15px;
-  width: 25px;
+  width: 26px;
   height: 25px;
   background-color: #9356dc;
   border-radius: 25px;
@@ -125,7 +125,6 @@ a {
 }
 
 header {
-  display: flex;
   font-weight: bold;
   text-align: center;
   padding: 1rem;
