@@ -36,7 +36,7 @@
 		justify-content: space-between;
 	}
 	&__heart {
-		font-size: 2em;
+		font-size: 1.6em;
 	}
 	&__label {
 		display: flex;
@@ -56,4 +56,23 @@
 	@media (min-width: $breakpoint-tablet) {
 		width: 350px;
 	}
+}
+.card_description {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+.meal_card {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+	height: fit-content;
+	border-radius: 15px;
+	@include boxshadow;
+}
+.meal_card_text {
+	display: flex;
+	flex-direction: column;
 }

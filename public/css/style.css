@@ -21,7 +21,8 @@ body {
   box-sizing: border-box;
 }
 
-h4 {
+h4,
+h1 {
   font-family: "Shrikhand", sans-serif;
   font-size: 1.5rem;
   font-weight: bold;
@@ -34,6 +35,12 @@ ul {
 
 a {
   text-decoration: none;
+}
+
+.underline {
+  background: #99e2d0;
+  width: 45px;
+  height: 0.3rem;
 }
 
 .btn {
@@ -144,7 +151,11 @@ header img {
 
 .header_menus {
   display: flex;
-  background-color: burlywood;
+}
+
+.index_arrow {
+  color: black;
+  font-size: 1.5rem;
 }
 
 .card_restaurants {
@@ -186,7 +197,7 @@ header img {
   justify-content: space-between;
 }
 .card_restaurants__heart {
-  font-size: 2em;
+  font-size: 1.6em;
 }
 .card_restaurants__label {
   display: flex;
@@ -207,6 +218,28 @@ header img {
   .card_restaurants {
     width: 350px;
   }
+}
+
+.card_description {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.meal_card {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: fit-content;
+  border-radius: 15px;
+  box-shadow: 2px 4px 4px 1px rgba(128, 128, 128, 0.5);
+}
+
+.meal_card_text {
+  display: flex;
+  flex-direction: column;
 }
 
 .footer {
@@ -334,8 +367,23 @@ header img {
   margin: 0 1rem;
 }
 
-img {
-  width: 150px;
+.nom_restaurant {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 1rem;
+  align-items: center;
+}
+
+.restaurant img {
+  width: 100%;
+}
+
+.menu_restaurant {
+  margin: 0 1rem;
+}
+.menu_restaurant h2 {
+  margin: 0.7rem 0;
+  font-size: 18px;
 }
 
 /*# sourceMappingURL=style.css.map */
