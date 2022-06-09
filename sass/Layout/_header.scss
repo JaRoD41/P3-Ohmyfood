@@ -1,4 +1,5 @@
 header {
+	display: flex;
 	font-weight: bold;
 	text-align: center;
 	padding: 1rem;
@@ -14,4 +15,8 @@ header {
 		min-width: 120px;
 		max-width: 600px;
 	}
+}
+.header_menus {
+	display: flex;
+	background-color: pink;
 }

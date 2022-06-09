@@ -125,6 +125,7 @@ a {
 }
 
 header {
+  display: flex;
   font-weight: bold;
   text-align: center;
   padding: 1rem;
@@ -140,6 +141,11 @@ header img {
   width: 50%;
   min-width: 120px;
   max-width: 600px;
+}
+
+.header_menus {
+  display: flex;
+  background-color: pink;
 }
 
 .card_restaurants {
