@@ -141,7 +141,8 @@ header img {
   min-width: 120px;
   max-width: 600px;
 }
-header__menus {
+
+.header_menus {
   display: flex;
   background-color: burlywood;
 }

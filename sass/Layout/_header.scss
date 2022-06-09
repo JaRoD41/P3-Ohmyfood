@@ -14,8 +14,8 @@ header {
 		min-width: 120px;
 		max-width: 600px;
 	}
-	&__menus {
-		display: flex;
-		background-color: burlywood;
-	}
+}
+.header_menus {
+	display: flex;
+	background-color: burlywood;
 }
