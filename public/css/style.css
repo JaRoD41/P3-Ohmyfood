@@ -141,10 +141,9 @@ header img {
   min-width: 120px;
   max-width: 600px;
 }
-
-.header_menus {
+header__menus {
   display: flex;
-  background-color: pink;
+  background-color: burlywood;
 }
 
 .card_restaurants {
