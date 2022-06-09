@@ -60,3 +60,17 @@
 	background-color: #f2eafb;
 	@include boxshadow;
 }
+.nouveau {
+	width: 5rem;
+	height: 2.5rem;
+	color: #1a8a68;
+	background: $tertiary-color;
+	line-height: 2rem;
+	position: absolute;
+	text-align: center;
+	display: block;
+	font-weight: bold;
+	z-index: 1;
+	top: 1rem;
+	right: 1rem;
+}

@@ -104,6 +104,21 @@ a {
   box-shadow: 2px 4px 4px 1px rgba(128, 128, 128, 0.5);
 }
 
+.nouveau {
+  width: 5rem;
+  height: 2.5rem;
+  color: #1a8a68;
+  background: #99e2d0;
+  line-height: 2rem;
+  position: absolute;
+  text-align: center;
+  display: block;
+  font-weight: bold;
+  z-index: 1;
+  top: 1rem;
+  right: 1rem;
+}
+
 header {
   font-weight: bold;
   text-align: center;
@@ -124,13 +139,14 @@ header img {
 
 .card_restaurants {
   width: 100%;
-  height: fit-content;
+  /*height: fit-content;*/
   margin: auto;
+  position: relative;
   border-radius: 20px;
   background-color: white;
   color: black;
   box-shadow: 0px 5px 10px #999;
-  /*transition: transform 1s;*/
+  transition: transform 1s;
 }
 .card_restaurants a {
   color: #333;
@@ -138,7 +154,7 @@ header img {
 }
 .card_restaurants:hover {
   box-shadow: 0px 30px 18px -8px rgba(0, 0, 0, 0.1);
-  /*transform: scale(1.15, 1.15);*/
+  transform: scale(1.15, 1.15);
 }
 .card_restaurants__photo {
   height: 80%;
@@ -169,11 +185,18 @@ header img {
   padding: 0 1rem;
 }
 .card_restaurants h3 {
+  margin: 0.3rem 0;
   font-size: 14px;
   font-weight: bold;
 }
 .card_restaurants p {
+  margin: 0.3rem 0;
   font-size: 12px;
+}
+@media (min-width: 768px) {
+  .card_restaurants {
+    width: 350px;
+  }
 }
 
 .footer {
@@ -259,6 +282,9 @@ header img {
 @media (min-width: 768px) {
   .restaurants_list {
     gap: 2rem;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
   }
 }
 
@@ -294,7 +320,7 @@ header img {
   }
 }
 
-.restaurants_list {
+.resto-zone {
   margin: 0 1rem;
 }
 
