@@ -4,6 +4,7 @@
 	color: white;
 	height: 50px;
 	font-size: 16px;
+	font-weight: bold;
 	padding: 1rem;
 	border-radius: 45px;
 	cursor: pointer;
@@ -17,6 +18,10 @@
 	@include boxshadow;
 	@media (min-width: $breakpoint-tablet) {
 		width: 50%;
+	}
+	&:hover {
+		filter: brightness(1.35);
+		@include boxshadow-hover;
 	}
 }
 .btn-fonct {
