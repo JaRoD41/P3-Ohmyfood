@@ -23,6 +23,12 @@ body {
 
 main {
   background-color: #f6f6f6;
+  padding-bottom: 4rem;
+}
+main nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 h4,
@@ -63,7 +69,7 @@ a {
   border: none;
   width: 65%;
   max-width: 500px;
-  margin: 1.5rem 0;
+  margin-top: 3.5rem;
   box-shadow: 2px 4px 4px 1px rgba(128, 128, 128, 0.5);
 }
 @media (min-width: 768px) {
@@ -229,6 +235,11 @@ header img {
   flex-direction: row;
   justify-content: space-between;
 }
+.card_description .brief_plat,
+.card_description .prix_plat {
+  margin: 0.5rem 0.3rem;
+  padding: 0 0.6rem;
+}
 
 .meal_card {
   display: flex;
@@ -236,8 +247,10 @@ header img {
   justify-content: space-between;
   align-items: center;
   width: 100%;
+  margin: 1rem;
   height: fit-content;
   border-radius: 15px;
+  background-color: white;
   box-shadow: 2px 4px 4px 1px rgba(128, 128, 128, 0.5);
 }
 
@@ -245,10 +258,13 @@ header img {
   display: flex;
   flex-direction: column;
 }
+.meal_card_text .nom_plat {
+  margin: 0.3rem 0;
+  padding: 0 0.6rem;
+}
 
 .footer {
   background-color: #353535;
-  margin-top: 2rem;
   color: white;
 }
 .footer__flex {
@@ -297,7 +313,7 @@ header img {
   text-align: center;
   width: 100%;
   background: linear-gradient(white, #eaeaea);
-  margin: 1rem 0 1rem 0;
+  padding-bottom: 2.5rem;
   align-items: center;
 }
 .intro__explain {
@@ -388,6 +404,11 @@ header img {
 .menu_restaurant h2 {
   margin: 0.7rem 0;
   font-size: 18px;
+}
+
+.button-zone {
+  display: flex;
+  justify-content: center;
 }
 
 /*# sourceMappingURL=style.css.map */

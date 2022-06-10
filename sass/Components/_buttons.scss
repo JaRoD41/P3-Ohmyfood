@@ -14,7 +14,7 @@
 	border: none;
 	width: 65%;
 	max-width: 500px;
-	margin: 1.5rem 0;
+	margin-top: 3.5rem;
 	@include boxshadow;
 	@media (min-width: $breakpoint-tablet) {
 		width: 50%;

@@ -13,4 +13,10 @@ body {
 }
 main {
 	background-color: $fond_restaurant_color;
+	padding-bottom: 4rem;
+	nav {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
 }

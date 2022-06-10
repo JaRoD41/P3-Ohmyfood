@@ -4,7 +4,7 @@
 	text-align: center;
 	width: 100%;
 	background: linear-gradient(white, #eaeaea);
-	margin: 1rem 0 1rem 0;
+	padding-bottom: 2.5rem;
 	align-items: center;
 	&__explain {
 		font-weight: bold;
@@ -86,4 +86,8 @@
 		margin: 0.7rem 0;
 		font-size: 18px;
 	}
+}
+.button-zone {
+	display: flex;
+	justify-content: center;
 }
