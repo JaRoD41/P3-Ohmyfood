@@ -6,6 +6,7 @@
 	background: linear-gradient(white, #eaeaea);
 	padding-bottom: 2.5rem;
 	align-items: center;
+
 	&__explain {
 		font-weight: bold;
 		font-size: 1rem;
@@ -22,15 +23,18 @@
 	height: 3rem;
 	background-color: #eaeaea;
 	font-weight: bold;
+
 	&__icon {
 		padding-right: 1rem;
 	}
 }
+
 .restaurants_list {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
 	gap: 1.1rem 0;
+
 	@media (min-width: $breakpoint-tablet) {
 		gap: 2rem;
 		flex-direction: row;
@@ -38,9 +42,11 @@
 		justify-content: center;
 	}
 }
+
 .fonctionnement {
 	margin: 0 1rem;
 }
+
 .fonctionnement-flex {
 	display: flex;
 	flex-direction: column;
@@ -48,6 +54,7 @@
 	list-style-type: none;
 	height: 240px;
 	justify-content: space-evenly;
+
 	li {
 		display: flex;
 		height: 48px;
@@ -56,9 +63,11 @@
 		padding: 1rem;
 		border-radius: 45px;
 	}
+
 	.fa-store {
 		color: $primary-color;
 	}
+
 	@media (min-width: $breakpoint-tablet) {
 		flex-direction: row;
 		align-items: center;
@@ -66,28 +75,38 @@
 		justify-content: space-evenly;
 	}
 }
+
 .resto-zone {
 	margin: 0 1rem;
 }
+
 .nom_restaurant {
 	display: flex;
 	justify-content: space-between;
 	margin: 0 1rem;
 	align-items: center;
 }
+
 .restaurant {
 	img {
 		width: 100%;
 	}
 }
+
 .menu_restaurant {
 	margin: 0 1rem;
+
 	h2 {
 		margin: 0.7rem 0;
 		font-size: 18px;
 	}
 }
+
 .button-zone {
 	display: flex;
 	justify-content: center;
+}
+
+.menu_part h2 {
+	font-weight: normal;
 }
