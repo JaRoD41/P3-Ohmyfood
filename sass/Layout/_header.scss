@@ -4,21 +4,21 @@ header {
 	padding: 1rem;
 	box-shadow: 0px 5px 5px lightgrey;
 	margin-bottom: 5px;
+
 	a {
 		text-decoration: none;
 		color: black;
 	}
+
 	img {
 		margin: auto;
 		width: 50%;
 		min-width: 120px;
 		max-width: 600px;
 	}
-}
-.header_menus {
-	display: flex;
-}
-.index_arrow {
-	color: black;
-	font-size: 1.5rem;
+
+	.fa-arrow-left {
+		font-size: 2rem;
+		color: black;
+	}
 }

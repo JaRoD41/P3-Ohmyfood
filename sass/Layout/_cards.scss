@@ -81,6 +81,8 @@
 	}
 }
 
+
+
 .meal_card {
 	display: flex;
 	flex-direction: row;
@@ -92,14 +94,43 @@
 	border-radius: 15px;
 	background-color: white;
 	@include boxshadow;
+
+	@media (min-width:$breakpoint-desktop) {
+		width: 30%;
+	}
+
+	.fa-check-circle {
+		font-size: 2em;
+	}
 }
 
 .meal_card_text {
 	display: flex;
 	flex-direction: column;
+	flex: 100%;
 
 	.nom_plat {
 		margin: 0.3rem 0;
 		padding: 0 0.6rem;
+	}
+}
+
+.card_check {
+	background-color: $tertiary-color;
+	color: white;
+	flex: 0%;
+	width: 10%;
+	height: 2.1em;
+	line-height: 2.1em;
+	white-space: nowrap;
+	border-top-right-radius: 20px 20px;
+	border-bottom-right-radius: 20px 20px;
+	overflow: hidden;
+	cursor: pointer;
+	transition: all 700ms;
+
+	&:hover {
+		flex: 20%;
+		transform: translateX(100px);
 	}
 }

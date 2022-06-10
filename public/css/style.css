@@ -30,6 +30,12 @@ main nav {
   flex-direction: column;
   align-items: center;
 }
+@media (min-width: 1440px) {
+  main nav {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
 
 h4,
 h1 {
@@ -158,14 +164,9 @@ header img {
   min-width: 120px;
   max-width: 600px;
 }
-
-.header_menus {
-  display: flex;
-}
-
-.index_arrow {
+header .fa-arrow-left {
+  font-size: 2rem;
   color: black;
-  font-size: 1.5rem;
 }
 
 .card_restaurants {
@@ -253,14 +254,42 @@ header img {
   background-color: white;
   box-shadow: 2px 4px 4px 1px rgba(128, 128, 128, 0.5);
 }
+@media (min-width: 1440px) {
+  .meal_card {
+    width: 30%;
+  }
+}
+.meal_card .fa-check-circle {
+  font-size: 2em;
+}
 
 .meal_card_text {
   display: flex;
   flex-direction: column;
+  flex: 100%;
 }
 .meal_card_text .nom_plat {
   margin: 0.3rem 0;
   padding: 0 0.6rem;
+}
+
+.card_check {
+  background-color: #99e2d0;
+  color: white;
+  flex: 0%;
+  width: 10%;
+  height: 2.1em;
+  line-height: 2.1em;
+  white-space: nowrap;
+  border-top-right-radius: 20px 20px;
+  border-bottom-right-radius: 20px 20px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: all 700ms;
+}
+.card_check:hover {
+  flex: 20%;
+  transform: translateX(100px);
 }
 
 .footer {
@@ -340,6 +369,7 @@ header img {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  width: 100%;
   gap: 1.1rem 0;
 }
 @media (min-width: 768px) {
@@ -390,8 +420,12 @@ header img {
 .nom_restaurant {
   display: flex;
   justify-content: space-between;
-  margin: 0 1rem;
+  padding: 0 1rem;
   align-items: center;
+  position: relative;
+  background-color: #f6f6f6;
+  top: -2rem;
+  border-radius: 35px 35px 0 0;
 }
 
 .restaurant img {
