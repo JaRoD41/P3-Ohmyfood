@@ -4,7 +4,8 @@
 	"description": "",
 	"main": "index.js",
 	"scripts": {
-		"sass": "sass --watch ./sass/main.scss:./public/css/style.css --style expanded"
+		"sass": "sass --watch ./sass/main.scss:./public/css/style.css --style expanded",
+		"prefix": "postcss ./public/css/style.css --use autoprefixer -d ./public/css/prefixed/"
 	},
 	"repository": {
 		"type": "git",
@@ -12,6 +13,7 @@
 	},
 	"author": "Laurent TRINCO",
 	"license": "ISC",
+	"browserslist": "last 4 versions",
 	"bugs": {
 		"url": "https://github.com/JaRoD41/P3-Ohmyfood/issues"
 	},

@@ -20,6 +20,13 @@ body {
 * {
   box-sizing: border-box;
 }
+* a {
+  color: black;
+  text-decoration: none;
+}
+*:visited {
+  color: black;
+}
 
 main {
   background-color: #f6f6f6;
@@ -147,26 +154,24 @@ a {
   right: 1rem;
 }
 
-header {
-  font-weight: bold;
-  text-align: center;
+.header {
   padding: 1rem;
   box-shadow: 0px 5px 5px lightgrey;
   margin-bottom: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-header a {
+.header a {
   text-decoration: none;
   color: black;
+  cursor: pointer;
 }
-header img {
+.header img {
   margin: auto;
   width: 50%;
   min-width: 120px;
   max-width: 600px;
-}
-header .fa-arrow-left {
-  font-size: 2rem;
-  color: black;
 }
 
 .card_restaurants {
@@ -424,8 +429,8 @@ header .fa-arrow-left {
   align-items: center;
   position: relative;
   background-color: #f6f6f6;
-  top: -2rem;
-  border-radius: 35px 35px 0 0;
+  top: -50px;
+  border-radius: 40px 40px 0 0;
 }
 
 .restaurant img {
