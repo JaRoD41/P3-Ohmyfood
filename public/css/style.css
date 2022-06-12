@@ -162,11 +162,6 @@ a {
   justify-content: center;
   align-items: center;
 }
-.header a {
-  text-decoration: none;
-  color: black;
-  cursor: pointer;
-}
 .header img {
   margin: auto;
   width: 50%;
