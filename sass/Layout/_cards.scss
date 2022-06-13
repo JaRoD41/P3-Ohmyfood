@@ -79,6 +79,10 @@
 		margin: 0.5rem 0.3rem;
 		padding: 0 0.6rem;
 	}
+
+	.prix_plat {
+		font-weight: bold;
+	}
 }
 
 
@@ -107,7 +111,7 @@
 .meal_card_text {
 	display: flex;
 	flex-direction: column;
-	flex: 100%;
+	width: 80%;
 
 	.nom_plat {
 		margin: 0.3rem 0;
@@ -116,21 +120,19 @@
 }
 
 .card_check {
-	background-color: $tertiary-color;
+	display: flex;
+	background-color: pink;
+	height: 65px;
+	width: 25%;
+	justify-content: center;
+	align-items: center;
+	border-radius: 0 15px 15px 0;
 	color: white;
-	flex: 0%;
-	width: 10%;
-	height: 2.1em;
-	line-height: 2.1em;
-	white-space: nowrap;
-	border-top-right-radius: 20px 20px;
-	border-bottom-right-radius: 20px 20px;
-	overflow: hidden;
-	cursor: pointer;
-	transition: all 700ms;
+	transform: scale(1);
+	transition: transform 600ms;
 
 	&:hover {
-		flex: 20%;
-		transform: translateX(100px);
+		transform: scale(1.2);
+		background-color: $tertiary-color;
 	}
 }
