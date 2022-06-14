@@ -57,11 +57,13 @@
 		margin: 0.3rem 0;
 		font-size: 14px;
 		font-weight: bold;
+		text-overflow: ellipsis;
 	}
 
 	p {
 		margin: 0.3rem 0;
 		font-size: 12px;
+		text-overflow: ellipsis;
 	}
 
 	@media (min-width: $breakpoint-tablet) {
@@ -73,12 +75,14 @@
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
+	text-overflow: ellipsis;
 
 	.brief_plat,
 	.prix_plat {
 		font-size: 1rem;
 		margin: 0.5rem 0.3rem;
 		padding: 0 0.6rem;
+		text-overflow: ellipsis;
 	}
 
 	.prix_plat {
@@ -98,44 +102,49 @@
 	height: 4.5rem;
 	border-radius: 15px;
 	background-color: white;
+	text-overflow: ellipsis;
+	transition: all 1s;
+
+	.fa-check-circle {
+		font-size: 2rem;
+	}
+
 	@include boxshadow;
 
 	@media (min-width:$breakpoint-desktop) {
 		width: 30%;
 	}
 
-	.fa-check-circle {
-		font-size: 2em;
+	&:hover>.card_check {
+		width: 20%;
+
+		.fa-check-circle {
+			transform: rotate(360deg);
+		}
 	}
-}
 
-.meal_card_text {
-	display: flex;
-	flex-direction: column;
-	width: 80%;
+	.meal_card_text {
+		display: flex;
+		flex-direction: column;
+		width: 100%;
 
-	.nom_plat {
-		margin: 0.3rem 0;
-		padding: 0 0.6rem;
+		.nom_plat {
+			margin: 0.3rem 0;
+			padding: 0 0.6rem;
+		}
 	}
-}
 
-.card_check {
-	display: flex;
-	/*flex: 0%;*/
-	background-color: white;
-	color: transparent;
-	height: 4.5rem;
-	justify-content: center;
-	align-items: center;
-	border-radius: 0 15px 15px 0;
-	transition: all 1s;
-
-	&:hover {
-		/*flex: 50%;*/
-		width: 25%;
+	.card_check {
+		display: flex;
+		border: 1px solid pink;
+		width: 0%;
 		color: white;
-		transform: translateX(-100px);
-		background-color: $tertiary-color;
+		background-color: #99e2d0;
+		height: 4.5rem;
+		justify-content: center;
+		align-items: center;
+		overflow: hidden;
+		border-radius: 0 15px 15px 0;
+		transition: all 1s;
 	}
 }

@@ -223,10 +223,12 @@ a {
   margin: 0.3rem 0;
   font-size: 14px;
   font-weight: bold;
+  text-overflow: ellipsis;
 }
 .card_restaurants p {
   margin: 0.3rem 0;
   font-size: 12px;
+  text-overflow: ellipsis;
 }
 @media (min-width: 768px) {
   .card_restaurants {
@@ -238,12 +240,14 @@ a {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  text-overflow: ellipsis;
 }
 .card_description .brief_plat,
 .card_description .prix_plat {
   font-size: 1rem;
   margin: 0.5rem 0.3rem;
   padding: 0 0.6rem;
+  text-overflow: ellipsis;
 }
 .card_description .prix_plat {
   font-weight: bold;
@@ -259,44 +263,45 @@ a {
   height: 4.5rem;
   border-radius: 15px;
   background-color: white;
+  text-overflow: ellipsis;
+  transition: all 1s;
   box-shadow: 2px 4px 4px 1px rgba(128, 128, 128, 0.5);
+}
+.meal_card .fa-check-circle {
+  font-size: 2rem;
 }
 @media (min-width: 1440px) {
   .meal_card {
     width: 30%;
   }
 }
-.meal_card .fa-check-circle {
-  font-size: 2em;
+.meal_card:hover > .card_check {
+  width: 20%;
 }
-
-.meal_card_text {
+.meal_card:hover > .card_check .fa-check-circle {
+  transform: rotate(360deg);
+}
+.meal_card .meal_card_text {
   display: flex;
   flex-direction: column;
-  width: 80%;
+  width: 100%;
 }
-.meal_card_text .nom_plat {
+.meal_card .meal_card_text .nom_plat {
   margin: 0.3rem 0;
   padding: 0 0.6rem;
 }
-
-.card_check {
+.meal_card .card_check {
   display: flex;
-  /*flex: 0%;*/
-  background-color: white;
-  color: transparent;
+  border: 1px solid pink;
+  width: 0%;
+  color: white;
+  background-color: #99e2d0;
   height: 4.5rem;
   justify-content: center;
   align-items: center;
+  overflow: hidden;
   border-radius: 0 15px 15px 0;
   transition: all 1s;
-}
-.card_check:hover {
-  /*flex: 50%;*/
-  width: 25%;
-  color: white;
-  transform: translateX(-100px);
-  background-color: #99e2d0;
 }
 
 .footer {
