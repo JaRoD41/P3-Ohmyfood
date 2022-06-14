@@ -71,22 +71,33 @@
 	}
 }
 
-.card_description {
+.meal_card__body {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
 	text-overflow: ellipsis;
 
-	.brief_plat,
-	.prix_plat {
+	&__price {
+		font-size: bold;
+	}
+
+	&__name,
+	&__price {
 		font-size: 1rem;
 		margin: 0.5rem 0.3rem;
 		padding: 0 0.6rem;
-		text-overflow: ellipsis;
 	}
 
-	.prix_plat {
+	&__name {
 		font-weight: bold;
+		white-space: nowrap;
+
+		&--brief {
+			font-weight: normal;
+			white-space: nowrap;
+			overflow: hidden;
+			text-overflow: ellipsis;
+		}
 	}
 }
 
@@ -103,10 +114,11 @@
 	border-radius: 15px;
 	background-color: white;
 	text-overflow: ellipsis;
-	transition: all 1s;
+	transition: all 1800ms;
 
 	.fa-check-circle {
 		font-size: 2rem;
+		transform: rotate(359deg);
 	}
 
 	@include boxshadow;
@@ -115,28 +127,28 @@
 		width: 30%;
 	}
 
-	&:hover>.card_check {
+	&:hover>&__check {
 		width: 20%;
 
 		.fa-check-circle {
-			transform: rotate(360deg);
+			transition: all 1800ms;
+			transform: rotate(0deg);
 		}
 	}
 
-	.meal_card_text {
+	&__body {
 		display: flex;
 		flex-direction: column;
 		width: 100%;
 
-		.nom_plat {
+		&__name {
 			margin: 0.3rem 0;
 			padding: 0 0.6rem;
 		}
 	}
 
-	.card_check {
+	&__check {
 		display: flex;
-		border: 1px solid pink;
 		width: 0%;
 		color: white;
 		background-color: #99e2d0;

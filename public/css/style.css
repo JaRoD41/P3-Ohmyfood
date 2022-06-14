@@ -236,21 +236,29 @@ a {
   }
 }
 
-.card_description {
+.meal_card__body {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   text-overflow: ellipsis;
 }
-.card_description .brief_plat,
-.card_description .prix_plat {
+.meal_card__body__price {
+  font-size: bold;
+}
+.meal_card__body__name, .meal_card__body__price {
   font-size: 1rem;
   margin: 0.5rem 0.3rem;
   padding: 0 0.6rem;
-  text-overflow: ellipsis;
 }
-.card_description .prix_plat {
+.meal_card__body__name {
   font-weight: bold;
+  white-space: nowrap;
+}
+.meal_card__body__name--brief {
+  font-weight: normal;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .meal_card {
@@ -264,35 +272,36 @@ a {
   border-radius: 15px;
   background-color: white;
   text-overflow: ellipsis;
-  transition: all 1s;
+  transition: all 1800ms;
   box-shadow: 2px 4px 4px 1px rgba(128, 128, 128, 0.5);
 }
 .meal_card .fa-check-circle {
   font-size: 2rem;
+  transform: rotate(359deg);
 }
 @media (min-width: 1440px) {
   .meal_card {
     width: 30%;
   }
 }
-.meal_card:hover > .card_check {
+.meal_card:hover > .meal_card__check {
   width: 20%;
 }
-.meal_card:hover > .card_check .fa-check-circle {
-  transform: rotate(360deg);
+.meal_card:hover > .meal_card__check .fa-check-circle {
+  transition: all 1800ms;
+  transform: rotate(0deg);
 }
-.meal_card .meal_card_text {
+.meal_card__body {
   display: flex;
   flex-direction: column;
   width: 100%;
 }
-.meal_card .meal_card_text .nom_plat {
+.meal_card__body__name {
   margin: 0.3rem 0;
   padding: 0 0.6rem;
 }
-.meal_card .card_check {
+.meal_card__check {
   display: flex;
-  border: 1px solid pink;
   width: 0%;
   color: white;
   background-color: #99e2d0;
