@@ -159,7 +159,7 @@ a {
   z-index: 1;
   top: 1rem;
   right: 1rem;
-  animation: nouv 2000ms forwards infinite;
+  /*animation: nouv 2000ms forwards infinite;*/
 }
 
 .header {
@@ -221,6 +221,15 @@ a {
 }
 .card_restaurants__heart {
   font-size: 1.6em;
+}
+.card_restaurants__heart .fas {
+  opacity: 0;
+  color: linear-gradient(170deg, #ff79da, #9356dc);
+  transition: all 350ms;
+}
+.card_restaurants__heart .fas:hover {
+  opacity: 1;
+  background-clip: text;
 }
 .card_restaurants__label {
   display: flex;

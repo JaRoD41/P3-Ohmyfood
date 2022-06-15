@@ -42,6 +42,17 @@
 
 	&__heart {
 		font-size: 1.6em;
+
+		.fas {
+			opacity: 0;
+			color: $colored-heart;
+			transition: all 350ms;
+
+			&:hover {
+				opacity: 1;
+				background-clip: text;
+			}
+		}
 	}
 
 	&__label {
