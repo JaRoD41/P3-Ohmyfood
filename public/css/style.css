@@ -242,14 +242,14 @@ a {
   justify-content: space-between;
 }
 .meal_card__body__price {
-  font-size: bold;
+  font-weight: bold;
 }
 .meal_card__body__check {
   display: flex;
   width: 0%;
   color: white;
   background-color: #99e2d0;
-  height: 4.5rem;
+  /*height: 4.5rem;*/
   justify-content: center;
   align-items: center;
   overflow: hidden;
@@ -265,12 +265,14 @@ a {
   display: flex;
   flex-direction: column;
   font-weight: bold;
+  width: 100%;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
 }
 .meal_card__body__name--brief {
   font-weight: normal;
+  margin: 0.3rem 0;
 }
 
 .meal_card {
@@ -280,7 +282,7 @@ a {
   align-items: center;
   width: 100%;
   margin: 1rem;
-  height: 4.5rem;
+  /*height: 4.5rem;*/
   border-radius: 15px;
   background-color: white;
   text-overflow: ellipsis;
@@ -304,16 +306,6 @@ a {
   }
 }
 
-/*&__body {
-	display: flex;
-	flex-direction: row;
-	width: 100%;
-
-	&__name {
-		margin: 0.3rem 0;
-		padding: 0 0.6rem;
-	}
-}*/
 .footer {
   background-color: #353535;
   color: white;
