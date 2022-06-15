@@ -1,0 +1,19 @@
+/* essai keyframe texte brillant pour étiquette "Nouveau" 
+@keyframes shine {
+    0% {
+        background-position-x: -500%;
+    }
+
+    100% {
+        background-position-x: 500%;
+    }
+}
+__________________________
+
+p {
+    background-clip: text;
+    background-repeat: no-repeat;
+    background-size: 80%;
+    animation: shine 5s linear infinite;
+    position: relative;
+}*/

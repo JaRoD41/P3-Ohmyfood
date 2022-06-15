@@ -46,6 +46,12 @@
 
 .fonctionnement {
 	margin: 0 1rem;
+
+	h2 {
+		@media (min-width: $breakpoint-tablet) {
+			text-align: center;
+		}
+	}
 }
 
 .fonctionnement-flex {
@@ -95,6 +101,11 @@
 .restaurant {
 	img {
 		width: 100%;
+		object-fit: cover;
+
+		@media (min-width: $breakpoint-tablet) {
+			height: 20rem;
+		}
 	}
 }
 
@@ -106,8 +117,17 @@
 		font-size: 18px;
 	}
 
-	h3 {
+	h3,
+	p {
 		margin: 0px;
+		white-space: nowrap;
+		overflow: hidden;
+		font-size: 14px;
+		text-overflow: ellipsis;
+
+		@media (min-width: $breakpoint-tablet) {
+			font-size: 16px;
+		}
 	}
 }
 

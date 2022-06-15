@@ -41,6 +41,7 @@ main nav {
   main nav {
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: center;
   }
 }
 
@@ -49,6 +50,12 @@ h1 {
   font-family: "Shrikhand", sans-serif;
   font-size: 1.5rem;
   font-weight: bold;
+}
+@media (min-width: 768px) {
+  h4,
+h1 {
+    font-size: 2rem;
+  }
 }
 
 ul {
@@ -152,6 +159,7 @@ a {
   z-index: 1;
   top: 1rem;
   right: 1rem;
+  animation: nouv 2000ms forwards infinite;
 }
 
 .header {
@@ -170,11 +178,13 @@ a {
 }
 .header .fa-arrow-left {
   font-size: 1.5rem;
+  position: absolute;
+  left: 2rem;
+  top: 2.1rem;
 }
 
 .card_restaurants {
   width: 100%;
-  /*height: fit-content;*/
   margin: auto;
   position: relative;
   border-radius: 20px;
@@ -193,7 +203,6 @@ a {
 }
 .card_restaurants__photo {
   height: 80%;
-  /*border-radius: 20px 20px 0 0;*/
 }
 .card_restaurants img {
   width: 100%;
@@ -221,14 +230,12 @@ a {
 }
 .card_restaurants h3 {
   margin: 0.3rem 0;
-  font-size: 14px;
+  font-size: 12px;
   font-weight: bold;
-  text-overflow: ellipsis;
 }
 .card_restaurants p {
   margin: 0.3rem 0;
   font-size: 12px;
-  text-overflow: ellipsis;
 }
 @media (min-width: 768px) {
   .card_restaurants {
@@ -249,7 +256,6 @@ a {
   width: 0%;
   color: white;
   background-color: #99e2d0;
-  /*height: 4.5rem;*/
   justify-content: center;
   align-items: center;
   overflow: hidden;
@@ -268,32 +274,30 @@ a {
   width: 100%;
   white-space: nowrap;
   overflow: hidden;
-  text-overflow: ellipsis;
 }
 .meal_card__body__name--brief {
   font-weight: normal;
   margin: 0.3rem 0;
+  font-size: 13px;
 }
 
 .meal_card {
-  /*display: flex;*/
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
   width: 100%;
   margin: 1rem;
-  /*height: 4.5rem;*/
   border-radius: 15px;
   background-color: white;
   text-overflow: ellipsis;
-  transition: all 1800ms;
+  transition: all 1s;
   box-shadow: 2px 4px 4px 1px rgba(128, 128, 128, 0.5);
 }
 .meal_card:hover .meal_card__body__check {
   width: 20%;
 }
 .meal_card:hover .fa-check-circle {
-  transition: all 1800ms;
+  transition: all 1s;
   transform: rotate(0deg);
 }
 .meal_card .fa-check-circle {
@@ -398,6 +402,11 @@ a {
 .fonctionnement {
   margin: 0 1rem;
 }
+@media (min-width: 768px) {
+  .fonctionnement h2 {
+    text-align: center;
+  }
+}
 
 .fonctionnement-flex {
   display: flex;
@@ -444,6 +453,12 @@ a {
 
 .restaurant img {
   width: 100%;
+  object-fit: cover;
+}
+@media (min-width: 768px) {
+  .restaurant img {
+    height: 20rem;
+  }
 }
 
 .menu_restaurant {
@@ -453,8 +468,19 @@ a {
   margin: 0.7rem 0;
   font-size: 18px;
 }
-.menu_restaurant h3 {
+.menu_restaurant h3,
+.menu_restaurant p {
   margin: 0px;
+  white-space: nowrap;
+  overflow: hidden;
+  font-size: 14px;
+  text-overflow: ellipsis;
+}
+@media (min-width: 768px) {
+  .menu_restaurant h3,
+.menu_restaurant p {
+    font-size: 16px;
+  }
 }
 
 .button-zone {

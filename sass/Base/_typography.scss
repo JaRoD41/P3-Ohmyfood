@@ -3,14 +3,21 @@ h1 {
 	font-family: "Shrikhand", sans-serif;
 	font-size: 1.5rem;
 	font-weight: bold;
+
+	@media (min-width: $breakpoint-tablet) {
+		font-size: 2rem;
+	}
 }
+
 ul {
 	list-style-type: none;
 	padding-inline-start: 0;
 }
+
 a {
 	text-decoration: none;
 }
+
 .underline {
 	background: $tertiary-color;
 	width: 45px;

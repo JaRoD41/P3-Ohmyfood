@@ -16,14 +16,17 @@
 	max-width: 500px;
 	margin-top: 3.5rem;
 	@include boxshadow;
+
 	@media (min-width: $breakpoint-tablet) {
 		width: 50%;
 	}
+
 	&:hover {
 		filter: brightness(1.35);
 		@include boxshadow-hover;
 	}
 }
+
 .btn-fonct {
 	display: flex;
 	border: none;
@@ -37,6 +40,7 @@
 	border-radius: 15px;
 	@include boxshadow;
 }
+
 .num-fonct {
 	display: flex;
 	color: white;
@@ -51,6 +55,7 @@
 	position: relative;
 	left: 10px;
 }
+
 .btn-fonct-pink {
 	display: flex;
 	border: none;
@@ -65,6 +70,7 @@
 	background-color: #f2eafb;
 	@include boxshadow;
 }
+
 .nouveau {
 	width: 5rem;
 	height: 2.5rem;
@@ -78,4 +84,5 @@
 	z-index: 1;
 	top: 1rem;
 	right: 1rem;
+	animation: nouv 2000ms forwards infinite;
 }
