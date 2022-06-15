@@ -104,7 +104,7 @@
 
 
 .meal_card {
-	display: flex;
+	/*display: flex;*/
 	flex-direction: row;
 	justify-content: space-between;
 	align-items: center;
@@ -138,7 +138,7 @@
 
 	&__body {
 		display: flex;
-		flex-direction: column;
+		flex-direction: row;
 		width: 100%;
 
 		&__name {

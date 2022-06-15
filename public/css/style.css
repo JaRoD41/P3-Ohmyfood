@@ -262,7 +262,7 @@ a {
 }
 
 .meal_card {
-  display: flex;
+  /*display: flex;*/
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
@@ -293,7 +293,7 @@ a {
 }
 .meal_card__body {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   width: 100%;
 }
 .meal_card__body__name {
