@@ -461,6 +461,9 @@ a {
   margin: 0.7rem 0;
   font-size: 18px;
 }
+.menu_restaurant h3 {
+  margin: 0px;
+}
 
 .button-zone {
   display: flex;
