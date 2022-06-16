@@ -45,12 +45,16 @@
 
 		.fas {
 			opacity: 0;
-			color: $btn-color;
-			transition: all 350ms;
+			z-index: 0;
+
 
 			&:hover {
+				font-size: 1.7rem;
+				z-index: 1;
 				opacity: 1;
 				background-clip: text;
+				color: red;
+				transition: all 350ms;
 			}
 		}
 	}

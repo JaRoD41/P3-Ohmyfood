@@ -250,12 +250,15 @@ a {
 }
 .card_restaurants__heart .fas {
   opacity: 0;
-  color: linear-gradient(170deg, #ff79da, #9356dc);
-  transition: all 350ms;
+  z-index: 0;
 }
 .card_restaurants__heart .fas:hover {
+  font-size: 1.7rem;
+  z-index: 1;
   opacity: 1;
   background-clip: text;
+  color: red;
+  transition: all 350ms;
 }
 .card_restaurants__label {
   display: flex;
@@ -465,7 +468,6 @@ a {
     align-items: center;
     height: 100px;
     flex-wrap: nowrap;
-    justify-content: space-between;
   }
 }
 
