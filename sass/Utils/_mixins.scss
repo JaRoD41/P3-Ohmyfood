@@ -5,12 +5,51 @@
 	box-sizing: border-box;
 	margin-bottom: -50rem;
 }
+
 @mixin linear-grey {
 	background: linear-gradient(#ffffff, #c3c3c3);
 }
+
 @mixin boxshadow {
 	box-shadow: 2px 4px 4px 1px rgba(128, 128, 128, 0.5);
 }
+
 @mixin boxshadow-hover {
 	box-shadow: 4px 6px 4px 1px rgba(128, 128, 128, 0.8);
+}
+
+@mixin btn-fonct {
+	display: flex;
+	border: none;
+	width: 100%;
+	align-items: center;
+	justify-content: space-evenly;
+	height: 3rem;
+	font-weight: bold;
+	font-size: 14px;
+	padding: 1rem;
+	border-radius: 15px;
+
+	.fas {
+		padding-right: 5px;
+	}
+}
+
+@mixin btn-fonct-pink {
+	display: flex;
+	border: none;
+	width: 100%;
+	align-items: center;
+	justify-content: space-evenly;
+	height: 3rem;
+	font-weight: bold;
+	font-size: 14px;
+	padding: 1rem;
+	border-radius: 15px;
+	background-color: #f2eafb;
+
+	.fas {
+		padding-right: 5px;
+		color: $primary-color;
+	}
 }

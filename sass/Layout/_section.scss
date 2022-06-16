@@ -71,15 +71,12 @@
 		border-radius: 45px;
 	}
 
-	.fa-store {
-		color: $primary-color;
-	}
-
 	@media (min-width: $breakpoint-tablet) {
 		flex-direction: row;
 		align-items: center;
 		height: 100px;
-		justify-content: space-evenly;
+		flex-wrap: nowrap;
+		justify-content: space-between;
 	}
 }
 

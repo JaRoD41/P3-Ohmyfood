@@ -115,6 +115,28 @@ a {
   border-radius: 15px;
   box-shadow: 2px 4px 4px 1px rgba(128, 128, 128, 0.5);
 }
+.btn-fonct .fas {
+  padding-right: 5px;
+}
+.btn-fonct:hover {
+  cursor: pointer;
+  display: flex;
+  border: none;
+  width: 100%;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 3rem;
+  font-weight: bold;
+  font-size: 14px;
+  padding: 1rem;
+  border-radius: 15px;
+  background-color: #f2eafb;
+  box-shadow: 4px 6px 4px 1px rgba(128, 128, 128, 0.8);
+}
+.btn-fonct:hover .fas {
+  padding-right: 5px;
+  color: #9356dc;
+}
 
 .num-fonct {
   display: flex;
@@ -144,6 +166,10 @@ a {
   border-radius: 15px;
   background-color: #f2eafb;
   box-shadow: 2px 4px 4px 1px rgba(128, 128, 128, 0.5);
+}
+.btn-fonct-pink .fas {
+  padding-right: 5px;
+  color: #9356dc;
 }
 
 .nouveau {
@@ -433,15 +459,13 @@ a {
   padding: 1rem;
   border-radius: 45px;
 }
-.fonctionnement-flex .fa-store {
-  color: #9356dc;
-}
 @media (min-width: 768px) {
   .fonctionnement-flex {
     flex-direction: row;
     align-items: center;
     height: 100px;
-    justify-content: space-evenly;
+    flex-wrap: nowrap;
+    justify-content: space-between;
   }
 }
 

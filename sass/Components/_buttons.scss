@@ -28,17 +28,14 @@
 }
 
 .btn-fonct {
-	display: flex;
-	border: none;
-	width: 100%;
-	align-items: center;
-	justify-content: space-evenly;
-	height: 3rem;
-	font-weight: bold;
-	font-size: 14px;
-	padding: 1rem;
-	border-radius: 15px;
+	@include btn-fonct;
 	@include boxshadow;
+
+	&:hover {
+		cursor: pointer;
+		@include btn-fonct-pink;
+		@include boxshadow-hover;
+	}
 }
 
 .num-fonct {
@@ -57,17 +54,7 @@
 }
 
 .btn-fonct-pink {
-	display: flex;
-	border: none;
-	width: 100%;
-	align-items: center;
-	justify-content: space-evenly;
-	height: 3rem;
-	font-weight: bold;
-	font-size: 14px;
-	padding: 1rem;
-	border-radius: 15px;
-	background-color: #f2eafb;
+	@include btn-fonct-pink;
 	@include boxshadow;
 }
 
