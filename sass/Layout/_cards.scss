@@ -44,17 +44,17 @@
 		font-size: 1.6em;
 
 		.fas {
-			opacity: 0;
 			z-index: 0;
-
+			cursor: pointer;
 
 			&:hover {
-				font-size: 1.7rem;
+				animation: heart-fill 300ms ease-in-out;
 				z-index: 1;
-				opacity: 1;
 				background-clip: text;
-				color: red;
-				transition: all 350ms;
+				color: $btn-color;
+				display: inline-block;
+				opacity: 1;
+				font-weight: bold;
 			}
 		}
 	}
