@@ -1,4 +1,9 @@
 @charset "UTF-8";
+/*@mixin card_appear {
+	animation-name: appear;
+	animation-duration: 1s;
+	animation-fill-mode: backwards;
+}*/
 /* essai keyframe texte brillant pour étiquette "Nouveau" 
 @keyframes shine {
     0% {
@@ -37,7 +42,7 @@ p {
 }
 @keyframes appear {
   from {
-    transform: translateY(-100px);
+    transform: translateY(50px);
     opacity: 0;
   }
   to {
@@ -78,16 +83,6 @@ body {
 main {
   background-color: #f6f6f6;
   padding-bottom: 4rem;
-}
-main nav {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-main nav .meal_card {
-  animation-name: appear;
-  animation-duration: 2s;
-  animation-fill-mode: backwards;
 }
 @media (min-width: 1440px) {
   main nav {
@@ -338,6 +333,7 @@ a {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  /*@include card_appear;*/
 }
 .meal_card__body__price {
   font-weight: bold;
@@ -569,6 +565,33 @@ a {
 .menu_restaurant p {
     font-size: 16px;
   }
+}
+.menu_restaurant .entrees,
+.menu_restaurant .plats,
+.menu_restaurant .desserts {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.menu_restaurant .entrees:nth-child(1),
+.menu_restaurant .plats:nth-child(1),
+.menu_restaurant .desserts:nth-child(1) {
+  animation: appear 1.5s ease-in-out 0.1s;
+}
+.menu_restaurant .entrees:nth-child(2),
+.menu_restaurant .plats:nth-child(2),
+.menu_restaurant .desserts:nth-child(2) {
+  animation: appear 1.7s ease-in-out 0.1s;
+}
+.menu_restaurant .entrees:nth-child(3),
+.menu_restaurant .plats:nth-child(3),
+.menu_restaurant .desserts:nth-child(3) {
+  animation: appear 1.9s ease-in-out 0.1s;
+}
+.menu_restaurant .entrees:nth-child(4),
+.menu_restaurant .plats:nth-child(4),
+.menu_restaurant .desserts:nth-child(4) {
+  animation: appear 2.1s ease-in-out 0.1s;
 }
 
 .button-zone {
