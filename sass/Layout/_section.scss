@@ -132,7 +132,7 @@
 		display: flex;
 		flex-direction: column;
 		align-items: center;
-		@include card_appear;
+		animation: appear 1.5s ease-in-out .1s;
 
 		@media (min-width: $breakpoint-desktop) {
 			flex-direction: row;
