@@ -29,13 +29,4 @@ body {
 main {
 	background-color: $fond_restaurant_color;
 	padding-bottom: 4rem;
-
-	nav {
-
-		@media (min-width: $breakpoint-desktop) {
-			flex-direction: row;
-			flex-wrap: wrap;
-			justify-content: center;
-		}
-	}
 }

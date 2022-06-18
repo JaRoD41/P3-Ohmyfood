@@ -133,6 +133,12 @@
 		flex-direction: column;
 		align-items: center;
 		@include card_appear;
+
+		@media (min-width: $breakpoint-desktop) {
+			flex-direction: row;
+			flex-wrap: wrap;
+			justify-content: center;
+		}
 	}
 }
 

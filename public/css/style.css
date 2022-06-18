@@ -84,13 +84,6 @@ main {
   background-color: #f6f6f6;
   padding-bottom: 4rem;
 }
-@media (min-width: 1440px) {
-  main nav {
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-}
 
 h4,
 h1 {
@@ -592,6 +585,15 @@ a {
 .menu_restaurant .plats:nth-child(4),
 .menu_restaurant .desserts:nth-child(4) {
   animation: appear 2.1s ease-in-out 0.1s;
+}
+@media (min-width: 1440px) {
+  .menu_restaurant .entrees,
+.menu_restaurant .plats,
+.menu_restaurant .desserts {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 }
 
 .button-zone {
