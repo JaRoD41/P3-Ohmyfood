@@ -53,3 +53,11 @@
 		color: $primary-color;
 	}
 }
+
+@mixin card_appear {
+	& .meal_card {
+		animation-name: appear;
+		animation-duration: 2s;
+		animation-fill-mode: backwards;
+	}
+}

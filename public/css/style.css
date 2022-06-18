@@ -35,6 +35,16 @@ p {
     font-size: 1.65rem;
   }
 }
+@keyframes appear {
+  from {
+    transform: translateY(-100px);
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 body {
   max-width: 768px;
   min-width: 320px;
@@ -73,6 +83,11 @@ main nav {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+main nav .meal_card {
+  animation-name: appear;
+  animation-duration: 2s;
+  animation-fill-mode: backwards;
 }
 @media (min-width: 1440px) {
   main nav {
