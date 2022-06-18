@@ -22,11 +22,18 @@ p {
         opacity: 0;
     }
 
-    50% {
-        opacity: 0.5;
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes heart-empty {
+    0% {
+        opacity: 1;
     }
 
     100% {
-        opacity: 1;
+        opacity: 0;
+        font-size: 1.65rem;
     }
 }
