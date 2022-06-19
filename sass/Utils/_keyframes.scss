@@ -39,13 +39,58 @@ p {
 }
 
 @keyframes appear {
-    from {
-        transform: translateY(50px);
+    0% {
+        transform: translateY(100px);
         opacity: 0;
     }
 
-    to {
+    100% {
         opacity: 1;
         transform: translateY(0);
+    }
+}
+
+@keyframes appear-rebond {
+    0% {
+        transform: translateY(100px);
+        opacity: 0;
+    }
+
+    40% {
+        transform: translateY(-40px);
+    }
+
+    70% {
+        transform: translateY(20px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes loader {
+    0% {
+        transform: rotate(0deg) translateY(-200%);
+    }
+
+    60%,
+    100% {
+        transform: rotate(360deg) translateY(-200%);
+    }
+}
+
+@keyframes rotate-grad {
+    0% {
+        -webkit-filter: hue-rotate(0deg);
+    }
+
+    50% {
+        -webkit-filter: hue-rotate(-45deg);
+    }
+
+    100% {
+        -webkit-filter: hue-rotate(0deg);
     }
 }

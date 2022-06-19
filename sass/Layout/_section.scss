@@ -41,6 +41,7 @@
 		flex-direction: row;
 		flex-wrap: wrap;
 		justify-content: center;
+		margin-top: 3rem;
 	}
 }
 
@@ -81,6 +82,12 @@
 
 .resto-zone {
 	margin: 0 1rem;
+
+	@media (min-width: $breakpoint-tablet) {
+		h2 {
+			text-align: center;
+		}
+	}
 }
 
 .nom_restaurant {
@@ -113,6 +120,14 @@
 		font-size: 18px;
 	}
 
+	h2,
+	.underline {
+		@media (min-width: $breakpoint-tablet) {
+			animation: appear-rebond 1000ms ease-in-out;
+		}
+
+	}
+
 	h3,
 	p {
 		margin: 0px;
@@ -132,7 +147,7 @@
 		display: flex;
 		flex-direction: column;
 		align-items: center;
-		animation: appear 1.5s ease-in-out .1s;
+		opacity: 0;
 
 		@media (min-width: $breakpoint-desktop) {
 			flex-direction: row;
@@ -140,6 +155,18 @@
 			justify-content: center;
 		}
 	}
+}
+
+.entrees {
+	animation: appear 1000ms ease-in-out forwards;
+}
+
+.plats {
+	animation: appear 1000ms ease-in-out 250ms forwards;
+}
+
+.desserts {
+	animation: appear 1000ms ease-in-out 500ms forwards;
 }
 
 .button-zone {

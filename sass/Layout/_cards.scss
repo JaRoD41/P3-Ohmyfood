@@ -143,6 +143,7 @@
 	background-color: white;
 	text-overflow: ellipsis;
 	transition: all 1s;
+	@include card_appear;
 
 	&:hover {
 		.meal_card__body__check {

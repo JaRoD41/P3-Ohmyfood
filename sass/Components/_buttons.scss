@@ -19,6 +19,7 @@
 
 	@media (min-width: $breakpoint-tablet) {
 		width: 50%;
+		animation: rotate-grad 20s infinite linear;
 	}
 
 	&:hover {
