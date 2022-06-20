@@ -1,6 +1,6 @@
 @mixin body-position {
-	max-width: 768px;
-	min-width: 320px;
+	max-width: $wmax;
+	min-width: $wmin;
 	margin: auto;
 	box-sizing: border-box;
 	margin-bottom: -50rem;
@@ -74,4 +74,15 @@
 
 		animation: appear 2.1s ease-in-out .1s;
 	}
+}
+
+@mixin loader {
+
+	visibility: hidden;
+
+
+	.loader-circle .loader-quart {
+		animation: hideLoader 3500ms 1 forwards;
+	}
+
 }

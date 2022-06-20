@@ -1,23 +1,13 @@
 @charset "UTF-8";
-/* essai keyframe texte brillant pour étiquette "Nouveau" 
+/* keyframe texte brillant pour étiquette "Nouveau" */
 @keyframes shine {
-    0% {
-        background-position-x: -500%;
-    }
-
-    100% {
-        background-position-x: 500%;
-    }
+  0% {
+    background-position-x: -500%;
+  }
+  100% {
+    background-position-x: 500%;
+  }
 }
-__________________________
-
-p {
-    background-clip: text;
-    background-repeat: no-repeat;
-    background-size: 80%;
-    animation: shine 5s linear infinite;
-    position: relative;
-}*/
 @keyframes heart-fill {
   0% {
     opacity: 0;
@@ -78,6 +68,15 @@ p {
   }
   100% {
     -webkit-filter: hue-rotate(0deg);
+  }
+}
+@keyframes hideLoader {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    display: none;
   }
 }
 body {
@@ -257,43 +256,48 @@ a {
   z-index: 1;
   top: 1rem;
   right: 1rem;
-  /*animation: nouv 2000ms forwards infinite;*/
 }
 
+/* création du loader aliments qui tournent */
 .loader {
-  position: relative;
-  width: 15.7px;
-  height: 15.7px;
+  position: absolute;
+  width: 3rem;
+  height: 3rem;
   top: 50vh;
   left: 50vw;
   z-index: 20;
+  animation: hideLoader 3s 1 forwards;
+  animation-delay: 1500ms;
+}
+.loader .fas {
+  font-size: 2rem;
 }
 .loader div {
   width: 100%;
   height: 100%;
-  background-color: #474bff;
+  background-color: transparent;
   border-radius: 50%;
   animation: loader 1.25s infinite backwards;
 }
 .loader div:nth-child(1) {
   animation-delay: 0.15s;
-  background-color: rgba(147, 86, 220, 0.9);
+  color: rgb(147, 86, 220);
 }
 .loader div:nth-child(2) {
   animation-delay: 0.3s;
-  background-color: rgba(255, 121, 218, 0.8);
+  color: rgb(255, 121, 218);
 }
 .loader div:nth-child(3) {
   animation-delay: 0.45s;
-  background-color: rgba(153, 226, 208, 0.7);
+  color: rgb(153, 226, 208);
 }
 .loader div:nth-child(4) {
   animation-delay: 0.6s;
-  background-color: rgba(255, 121, 218, 0.6);
+  color: rgb(255, 121, 218);
 }
 .loader div:nth-child(5) {
   animation-delay: 0.75s;
-  background-color: rgba(147, 86, 220, 0.5);
+  color: rgb(147, 86, 220);
 }
 
 .header {
@@ -340,17 +344,13 @@ a {
   object-fit: cover;
   border-radius: 20px 20px 0 0;
 }
-.card_restaurants__text {
-  display: flex;
-  height: 20%;
-  color: black;
-}
-.card_restaurants__infos {
-  display: flex;
-  justify-content: space-between;
-}
 .card_restaurants__heart {
   font-size: 1.6rem;
+}
+.card_restaurants__heart .fa-stack {
+  position: absolute;
+  top: 9.5rem;
+  left: 18rem;
 }
 .card_restaurants__heart .fas {
   opacity: 0;
@@ -369,10 +369,11 @@ a {
   /*animation: heart-empty 300ms ease-in-out forwards;*/
   opacity: 0;
 }
-.card_restaurants__label {
+.card_restaurants__title {
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
   padding: 0 1rem;
 }
 .card_restaurants h3 {
@@ -612,6 +613,26 @@ a {
   background-color: #f6f6f6;
   top: -50px;
   border-radius: 40px 40px 0 0;
+}
+.nom_restaurant__heart {
+  font-size: 1.6rem;
+}
+.nom_restaurant__heart .fas {
+  opacity: 0;
+  cursor: pointer;
+  font-size: 1.7rem;
+}
+.nom_restaurant__heart .fas:hover {
+  animation: heart-fill 300ms ease-in-out forwards;
+  background-clip: text;
+  display: inline-block;
+  background: -webkit-linear-gradient(170deg, #ff79da, #9356dc);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.nom_restaurant__heart .fas:hover .empty {
+  /*animation: heart-empty 300ms ease-in-out forwards;*/
+  opacity: 0;
 }
 
 .restaurant img {

@@ -1,4 +1,4 @@
-/* essai keyframe texte brillant pour étiquette "Nouveau" 
+/* keyframe texte brillant pour étiquette "Nouveau" */
 @keyframes shine {
     0% {
         background-position-x: -500%;
@@ -8,15 +8,7 @@
         background-position-x: 500%;
     }
 }
-__________________________
 
-p {
-    background-clip: text;
-    background-repeat: no-repeat;
-    background-size: 80%;
-    animation: shine 5s linear infinite;
-    position: relative;
-}*/
 @keyframes heart-fill {
     0% {
         opacity: 0;
@@ -92,5 +84,16 @@ p {
 
     100% {
         -webkit-filter: hue-rotate(0deg);
+    }
+}
+
+@keyframes hideLoader {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+        display: none;
     }
 }

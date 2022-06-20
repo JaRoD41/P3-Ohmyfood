@@ -99,6 +99,33 @@
 	background-color: $fond_restaurant_color;
 	top: -50px;
 	border-radius: 40px 40px 0 0;
+
+	&__heart {
+		font-size: 1.6rem;
+
+		.fas {
+			opacity: 0;
+			cursor: pointer;
+			font-size: 1.7rem;
+
+			&:hover {
+				animation: heart-fill 300ms ease-in-out forwards;
+				background-clip: text;
+				display: inline-block;
+				background: -webkit-linear-gradient(170deg,
+						#ff79da,
+						#9356dc);
+				-webkit-background-clip: text;
+				-webkit-text-fill-color: transparent;
+
+				.empty {
+					/*animation: heart-empty 300ms ease-in-out forwards;*/
+					opacity: 0;
+				}
+
+			}
+		}
+	}
 }
 
 .restaurant {

@@ -1,6 +1,7 @@
 body {
 	@include body-position;
 
+
 	@media (min-width: $breakpoint-tablet) {
 		max-width: 100%;
 	}
