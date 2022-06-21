@@ -377,12 +377,6 @@ a {
     box-shadow: 0px 0px 20px #9356DC;
   }
 }
-.header img {
-  margin: auto;
-  width: 50%;
-  min-width: 120px;
-  max-width: 600px;
-}
 .header .fa-arrow-left {
   font-size: 1.5rem;
   position: absolute;
