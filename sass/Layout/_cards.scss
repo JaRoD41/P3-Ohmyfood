@@ -164,10 +164,16 @@
 		}
 	}
 
+
 	.fa-check-circle {
 		font-size: 2rem;
 		transform: rotate(359deg);
+
+		@media (max-width:375px) {
+			font-size: 1rem;
+		}
 	}
+
 
 	@include boxshadow;
 

@@ -32,6 +32,13 @@
 	@include btn-fonct;
 	@include boxshadow;
 
+	.choice {
+		@media (max-width: 768px) {
+			padding-left: 15px;
+		}
+	}
+
+
 	@media (min-width: $breakpoint-desktop) {
 		box-shadow: 2px 4px 4px 1px rgba(147,
 				86,

@@ -227,6 +227,11 @@ a {
 .btn-fonct .fas {
   padding-right: 5px;
 }
+@media (max-width: 768px) {
+  .btn-fonct .choice {
+    padding-left: 15px;
+  }
+}
 @media (min-width: 1440px) {
   .btn-fonct {
     box-shadow: 2px 4px 4px 1px rgba(147, 86, 220, 0.5);
@@ -384,6 +389,11 @@ a {
   left: 2rem;
   top: 2.1rem;
 }
+@media (min-width: 1440px) {
+  .header .fa-arrow-left {
+    top: 3.5rem;
+  }
+}
 
 .card_restaurants {
   width: 100%;
@@ -540,6 +550,11 @@ a {
   font-size: 2rem;
   transform: rotate(359deg);
 }
+@media (max-width: 375px) {
+  .meal_card .fa-check-circle {
+    font-size: 1rem;
+  }
+}
 @media (min-width: 1440px) {
   .meal_card {
     width: 30%;
@@ -601,7 +616,6 @@ a {
   align-items: center;
 }
 .intro__explain {
-  font-weight: bold;
   font-size: 1rem;
   padding: 0 1.1rem;
   margin-top: 2rem;
