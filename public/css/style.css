@@ -134,12 +134,11 @@ h5,
 h1 {
   font-family: "Shrikhand", sans-serif;
   font-size: 1.5rem;
-  font-weight: bold;
 }
 @media (min-width: 768px) {
   h5,
 h1 {
-    font-size: 2rem;
+    font-size: 2.5rem;
   }
 }
 
@@ -509,13 +508,14 @@ a {
   line-height: 1.7rem;
 }
 .footer h5 {
-  font-size: 1.2rem;
+  font-size: 1.8rem;
   margin-bottom: 1rem;
+  font-weight: normal;
 }
 @media (min-width: 768px) {
   .footer h5 {
     text-align: center;
-    font-size: 1.7rem;
+    font-size: 2.3rem;
   }
 }
 .footer i {
