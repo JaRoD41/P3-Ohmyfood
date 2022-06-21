@@ -4,11 +4,10 @@
     position: absolute;
     width: 3rem;
     height: 3rem;
-    top: 50vh;
-    left: 50vw;
+    top: 50%;
+    left: 48%;
     z-index: 20;
-    animation: hideLoader 3s 1 forwards;
-    animation-delay: 1500ms;
+    animation: hideLoader 2s linear 1000ms 1 forwards;
 
     & .fas {
         font-size: 2rem;
@@ -56,4 +55,8 @@
                     220);
         }
     }
+}
+
+.homepage {
+    animation: hidepage 3s 1 forwards;
 }
