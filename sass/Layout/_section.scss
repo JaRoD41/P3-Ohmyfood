@@ -100,6 +100,16 @@
 	top: -50px;
 	border-radius: 40px 40px 0 0;
 
+	h2 {
+		font-family: "Shrikhand", sans-serif;
+		font-size: 1.5rem;
+		font-weight: bold;
+
+		@media (min-width: $breakpoint-tablet) {
+			font-size: 2rem;
+		}
+	}
+
 	&__heart {
 		font-size: 1.6rem;
 
@@ -142,12 +152,12 @@
 .menu_restaurant {
 	margin: 0 1rem;
 
-	h2 {
+	h3 {
 		margin: 0.7rem 0;
 		font-size: 18px;
 	}
 
-	h2,
+	h3,
 	.underline {
 		@media (min-width: $breakpoint-tablet) {
 			animation: appear-rebond 1000ms ease-in-out;
@@ -155,7 +165,7 @@
 
 	}
 
-	h3,
+	h4,
 	p {
 		margin: 0px;
 		white-space: nowrap;
@@ -201,6 +211,6 @@
 	justify-content: center;
 }
 
-.menu_part h2 {
+.menu_part h3 {
 	font-weight: normal;
 }
