@@ -32,10 +32,22 @@
 	@include btn-fonct;
 	@include boxshadow;
 
+	@media (min-width: $breakpoint-desktop) {
+		box-shadow: 2px 4px 4px 1px rgba(147,
+				86,
+				220, 0.5);
+	}
+
 	&:hover {
 		cursor: pointer;
 		@include btn-fonct-pink;
 		@include boxshadow-hover;
+
+		@media (min-width: $breakpoint-desktop) {
+			outline: none;
+			border-color: #FF79DA;
+			box-shadow: 0 0 15px #FF79DA;
+		}
 	}
 }
 
@@ -72,4 +84,8 @@
 	z-index: 1;
 	top: 1rem;
 	right: 1rem;
+
+	@media (min-width: $breakpoint-desktop) {
+		animation: breathing 5s ease-out infinite normal;
+	}
 }

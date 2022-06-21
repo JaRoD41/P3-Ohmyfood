@@ -94,6 +94,20 @@
     opacity: 1;
   }
 }
+@keyframes breathing {
+  0% {
+    transform: scale(0.8);
+  }
+  25% {
+    transform: scale(1.1);
+  }
+  60% {
+    transform: scale(0.8);
+  }
+  100% {
+    transform: scale(0.8);
+  }
+}
 body {
   max-width: 768px;
   min-width: 320px;
@@ -157,6 +171,15 @@ a {
   height: 0.3rem;
 }
 
+@media (min-width: 768px) {
+  h1 {
+    font-size: 2.5rem;
+    background: -webkit-radial-gradient(circle, rgb(147, 86, 220) 25%, rgb(255, 121, 218) 50%, rgb(153, 226, 208) 75%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}
+
 .btn {
   display: flex;
   background: linear-gradient(170deg, #ff79da, #9356dc);
@@ -203,6 +226,11 @@ a {
 .btn-fonct .fas {
   padding-right: 5px;
 }
+@media (min-width: 1440px) {
+  .btn-fonct {
+    box-shadow: 2px 4px 4px 1px rgba(147, 86, 220, 0.5);
+  }
+}
 .btn-fonct:hover {
   cursor: pointer;
   display: flex;
@@ -221,6 +249,13 @@ a {
 .btn-fonct:hover .fas {
   padding-right: 5px;
   color: #9356dc;
+}
+@media (min-width: 1440px) {
+  .btn-fonct:hover {
+    outline: none;
+    border-color: #FF79DA;
+    box-shadow: 0 0 15px #FF79DA;
+  }
 }
 
 .num-fonct {
@@ -271,6 +306,11 @@ a {
   top: 1rem;
   right: 1rem;
 }
+@media (min-width: 1440px) {
+  .nouveau {
+    animation: breathing 5s ease-out infinite normal;
+  }
+}
 
 /* création du loader aliments qui tournent */
 .loader {
@@ -281,6 +321,13 @@ a {
   left: 48%;
   z-index: 20;
   animation: hideLoader 2s linear 1000ms 1 forwards;
+}
+@media (min-width: 1440px) {
+  .loader {
+    top: 60%;
+    width: 4rem;
+    height: 4rem;
+  }
 }
 .loader .fas {
   font-size: 2rem;
@@ -325,6 +372,11 @@ a {
   justify-content: center;
   align-items: center;
 }
+@media (min-width: 1440px) {
+  .header {
+    box-shadow: 0px 0px 20px #9356DC;
+  }
+}
 .header img {
   margin: auto;
   width: 50%;
@@ -347,6 +399,11 @@ a {
   box-shadow: 0px 5px 10px #999;
   transition: transform 1s;
 }
+@media (min-width: 1440px) {
+  .card_restaurants {
+    box-shadow: 0px 5px 10px #9356DC;
+  }
+}
 .card_restaurants a {
   color: #333;
   text-decoration: none;
@@ -354,6 +411,12 @@ a {
 .card_restaurants:hover {
   box-shadow: 0px 30px 18px -8px rgba(0, 0, 0, 0.1);
   transform: scale(1.15, 1.15);
+}
+@media (min-width: 1440px) {
+  .card_restaurants:hover {
+    box-shadow: 0px 30px 18px -8px rgba(147, 86, 220, 0.4);
+    transform: scale(1.15, 1.15);
+  }
 }
 .card_restaurants img {
   width: 100%;
@@ -412,7 +475,7 @@ a {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  /*@include card_appear;*/
+  cursor: pointer;
 }
 .meal_card__body__price {
   font-weight: bold;
@@ -635,7 +698,7 @@ a {
 .nom_restaurant h2 {
   font-family: "Shrikhand", sans-serif;
   font-size: 1.5rem;
-  font-weight: bold;
+  font-weight: normal;
 }
 @media (min-width: 768px) {
   .nom_restaurant h2 {

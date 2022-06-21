@@ -86,3 +86,9 @@
 	}
 
 }
+
+@mixin gradient-logo-color {
+	background: -webkit-radial-gradient(circle, rgba(147, 86, 220, 1) 25%, rgba(255, 121, 218, 1) 50%, rgba(153, 226, 208, 1) 75%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}

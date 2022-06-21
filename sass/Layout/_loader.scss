@@ -9,6 +9,12 @@
     z-index: 20;
     animation: hideLoader 2s linear 1000ms 1 forwards;
 
+    @media (min-width: $breakpoint-desktop) {
+        top: 60%;
+        width: 4rem;
+        height: 4rem;
+    }
+
     & .fas {
         font-size: 2rem;
     }

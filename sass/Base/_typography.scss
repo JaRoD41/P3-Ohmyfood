@@ -22,3 +22,10 @@ a {
 	width: 45px;
 	height: 0.3rem;
 }
+
+h1 {
+	@media (min-width: $breakpoint-tablet) {
+		font-size: 2.5rem;
+		@include gradient-logo-color;
+	}
+}
