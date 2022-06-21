@@ -423,8 +423,8 @@ a {
 }
 .card_restaurants__heart .fa-stack {
   position: absolute;
-  top: 9.5rem;
-  left: 18rem;
+  bottom: 0;
+  right: 0;
 }
 .card_restaurants__heart .fas {
   opacity: 0;
