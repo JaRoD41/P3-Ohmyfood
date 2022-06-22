@@ -224,6 +224,7 @@ a {
   border-radius: 15px;
   background-color: #f2eafb;
   box-shadow: 2px 4px 4px 1px rgba(128, 128, 128, 0.5);
+  cursor: pointer;
 }
 .btn-fonct-3 .fas {
   padding-right: 5px;
@@ -242,7 +243,6 @@ a {
     font-size: 14px;
     padding: 1rem;
     border-radius: 15px;
-    box-shadow: 2px 4px 4px 1px rgba(128, 128, 128, 0.5);
   }
   .btn-fonct-3 .fas {
     padding-right: 5px;
@@ -282,6 +282,7 @@ a {
   padding: 1rem;
   border-radius: 15px;
   box-shadow: 2px 4px 4px 1px rgba(128, 128, 128, 0.5);
+  cursor: pointer;
 }
 .btn-fonct .fas {
   padding-right: 5px;
@@ -294,6 +295,21 @@ a {
 @media (min-width: 1440px) {
   .btn-fonct {
     box-shadow: 2px 4px 4px 1px rgba(147, 86, 220, 0.5);
+    display: flex;
+    border: none;
+    width: 100%;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 3rem;
+    font-weight: bold;
+    font-size: 14px;
+    padding: 1rem;
+    border-radius: 15px;
+    background-color: #f2eafb;
+  }
+  .btn-fonct .fas {
+    padding-right: 5px;
+    color: #9356dc;
   }
 }
 .btn-fonct:hover {
