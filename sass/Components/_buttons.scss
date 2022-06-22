@@ -28,6 +28,57 @@
 	}
 }
 
+.btn-fonct-3 {
+	@include btn-fonct-pink;
+	@include boxshadow;
+
+	@media (min-width: $breakpoint-desktop) {
+		box-shadow: 2px 4px 4px 1px rgba(147,
+				86,
+				220, 0.5);
+		@include btn-fonct;
+		@include boxshadow;
+
+		&:hover {
+			cursor: pointer;
+			outline: none;
+			@include btn-fonct-pink;
+			border-color: #FF79DA;
+			box-shadow: 0 0 15px #FF79DA;
+		}
+	}
+}
+
+.btn-fonct {
+	@include btn-fonct;
+	@include boxshadow;
+
+	.choice {
+		@media (max-width: 768px) {
+			padding-left: 15px;
+		}
+	}
+
+
+	@media (min-width: $breakpoint-desktop) {
+		box-shadow: 2px 4px 4px 1px rgba(147,
+				86,
+				220, 0.5);
+	}
+
+	&:hover {
+		cursor: pointer;
+
+		@media (min-width: $breakpoint-desktop) {
+			outline: none;
+			@include btn-fonct-pink;
+			border-color: #FF79DA;
+			box-shadow: 0 0 15px #FF79DA;
+		}
+	}
+}
+
+/*
 .btn-fonct {
 	@include btn-fonct;
 	@include boxshadow;
@@ -56,8 +107,7 @@
 			box-shadow: 0 0 15px #FF79DA;
 		}
 	}
-}
-
+}*/
 .num-fonct {
 	display: flex;
 	color: white;
@@ -81,6 +131,7 @@
 .nouveau {
 	width: 5rem;
 	height: 2.5rem;
+	border-radius: 4px;
 	color: #1a8a68;
 	background: $tertiary-color;
 	line-height: 2rem;

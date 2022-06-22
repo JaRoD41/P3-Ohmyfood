@@ -211,6 +211,65 @@ a {
   box-shadow: 4px 6px 4px 1px rgba(128, 128, 128, 0.8);
 }
 
+.btn-fonct-3 {
+  display: flex;
+  border: none;
+  width: 100%;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 3rem;
+  font-weight: bold;
+  font-size: 14px;
+  padding: 1rem;
+  border-radius: 15px;
+  background-color: #f2eafb;
+  box-shadow: 2px 4px 4px 1px rgba(128, 128, 128, 0.5);
+}
+.btn-fonct-3 .fas {
+  padding-right: 5px;
+  color: #9356dc;
+}
+@media (min-width: 1440px) {
+  .btn-fonct-3 {
+    box-shadow: 2px 4px 4px 1px rgba(147, 86, 220, 0.5);
+    display: flex;
+    border: none;
+    width: 100%;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 3rem;
+    font-weight: bold;
+    font-size: 14px;
+    padding: 1rem;
+    border-radius: 15px;
+    box-shadow: 2px 4px 4px 1px rgba(128, 128, 128, 0.5);
+  }
+  .btn-fonct-3 .fas {
+    padding-right: 5px;
+  }
+  .btn-fonct-3:hover {
+    cursor: pointer;
+    outline: none;
+    display: flex;
+    border: none;
+    width: 100%;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 3rem;
+    font-weight: bold;
+    font-size: 14px;
+    padding: 1rem;
+    border-radius: 15px;
+    background-color: #f2eafb;
+    border-color: #FF79DA;
+    box-shadow: 0 0 15px #FF79DA;
+  }
+  .btn-fonct-3:hover .fas {
+    padding-right: 5px;
+    color: #9356dc;
+  }
+}
+
 .btn-fonct {
   display: flex;
   border: none;
@@ -239,31 +298,60 @@ a {
 }
 .btn-fonct:hover {
   cursor: pointer;
-  display: flex;
-  border: none;
-  width: 100%;
-  align-items: center;
-  justify-content: space-evenly;
-  height: 3rem;
-  font-weight: bold;
-  font-size: 14px;
-  padding: 1rem;
-  border-radius: 15px;
-  background-color: #f2eafb;
-  box-shadow: 4px 6px 4px 1px rgba(128, 128, 128, 0.8);
-}
-.btn-fonct:hover .fas {
-  padding-right: 5px;
-  color: #9356dc;
 }
 @media (min-width: 1440px) {
   .btn-fonct:hover {
     outline: none;
+    display: flex;
+    border: none;
+    width: 100%;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 3rem;
+    font-weight: bold;
+    font-size: 14px;
+    padding: 1rem;
+    border-radius: 15px;
+    background-color: #f2eafb;
     border-color: #FF79DA;
     box-shadow: 0 0 15px #FF79DA;
   }
+  .btn-fonct:hover .fas {
+    padding-right: 5px;
+    color: #9356dc;
+  }
 }
 
+/*
+.btn-fonct {
+	@include btn-fonct;
+	@include boxshadow;
+
+	.choice {
+		@media (max-width: 768px) {
+			padding-left: 15px;
+		}
+	}
+
+
+	@media (min-width: $breakpoint-desktop) {
+		box-shadow: 2px 4px 4px 1px rgba(147,
+				86,
+				220, 0.5);
+	}
+
+	&:hover {
+		cursor: pointer;
+		@include btn-fonct-pink;
+		@include boxshadow-hover;
+
+		@media (min-width: $breakpoint-desktop) {
+			outline: none;
+			border-color: #FF79DA;
+			box-shadow: 0 0 15px #FF79DA;
+		}
+	}
+}*/
 .num-fonct {
   display: flex;
   color: white;
@@ -301,6 +389,7 @@ a {
 .nouveau {
   width: 5rem;
   height: 2.5rem;
+  border-radius: 4px;
   color: #1a8a68;
   background: #99e2d0;
   line-height: 2rem;
@@ -319,6 +408,14 @@ a {
 }
 
 /* création du loader aliments qui tournent */
+.container {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  background-color: #fff;
+}
+
 .loader {
   position: absolute;
   width: 3rem;
@@ -389,7 +486,7 @@ a {
   left: 2rem;
   top: 2.1rem;
 }
-@media (min-width: 1440px) {
+@media (min-width: 768px) {
   .header .fa-arrow-left {
     top: 3.5rem;
   }
@@ -415,7 +512,7 @@ a {
 }
 .card_restaurants:hover {
   box-shadow: 0px 30px 18px -8px rgba(0, 0, 0, 0.1);
-  transform: scale(1.15, 1.15);
+  transform: scale(1.05, 1.05);
 }
 @media (min-width: 1440px) {
   .card_restaurants:hover {
