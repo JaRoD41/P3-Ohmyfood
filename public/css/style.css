@@ -1,13 +1,4 @@
 @charset "UTF-8";
-/* keyframe texte brillant pour étiquette "Nouveau" */
-@keyframes shine {
-  0% {
-    background-position-x: -500%;
-  }
-  100% {
-    background-position-x: 500%;
-  }
-}
 @keyframes heart-fill {
   0% {
     opacity: 0;
@@ -338,36 +329,6 @@ a {
   }
 }
 
-/*
-.btn-fonct {
-	@include btn-fonct;
-	@include boxshadow;
-
-	.choice {
-		@media (max-width: 768px) {
-			padding-left: 15px;
-		}
-	}
-
-
-	@media (min-width: $breakpoint-desktop) {
-		box-shadow: 2px 4px 4px 1px rgba(147,
-				86,
-				220, 0.5);
-	}
-
-	&:hover {
-		cursor: pointer;
-		@include btn-fonct-pink;
-		@include boxshadow-hover;
-
-		@media (min-width: $breakpoint-desktop) {
-			outline: none;
-			border-color: #FF79DA;
-			box-shadow: 0 0 15px #FF79DA;
-		}
-	}
-}*/
 .num-fonct {
   display: flex;
   color: white;
@@ -564,7 +525,6 @@ a {
   -webkit-text-fill-color: transparent;
 }
 .card_restaurants__heart .fas:hover .empty {
-  /*animation: heart-empty 300ms ease-in-out forwards;*/
   opacity: 0;
 }
 .card_restaurants__title {
@@ -844,7 +804,6 @@ a {
   -webkit-text-fill-color: transparent;
 }
 .nom_restaurant__heart .fas:hover .empty {
-  /*animation: heart-empty 300ms ease-in-out forwards;*/
   opacity: 0;
 }
 

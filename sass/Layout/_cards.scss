@@ -63,7 +63,6 @@
 				-webkit-text-fill-color: transparent;
 
 				.empty {
-					/*animation: heart-empty 300ms ease-in-out forwards;*/
 					opacity: 0;
 				}
 
@@ -152,6 +151,7 @@
 	text-overflow: ellipsis;
 	transition: all 1s;
 	@include card_appear;
+
 
 	&:hover {
 		.meal_card__body__check {
