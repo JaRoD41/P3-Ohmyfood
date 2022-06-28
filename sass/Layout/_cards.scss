@@ -103,6 +103,8 @@
 
 	&__price {
 		font-weight: bold;
+		display: flex;
+		align-self: end;
 	}
 
 	&__check {
