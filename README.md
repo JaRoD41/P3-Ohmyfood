@@ -1,4 +1,5 @@
 # P3-Ohmyfood
+<img width="196" alt="ohmyfood" src="https://user-images.githubusercontent.com/67756654/195329980-58225fbb-61fc-433d-9149-3da1dce28596.png">
 
 Git Pages : https://jarod41.github.io/P3-Ohmyfood/index.html
 
